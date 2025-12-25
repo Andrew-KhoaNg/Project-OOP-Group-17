@@ -6,7 +6,7 @@ public class Card {
 	private int faceValue;
 	
 	public Card(char card, int number) {
-		if (!validCard(card, tall)) {
+		if (!validCard(card, number)) {
 			throw new IllegalArgumentException("Invalid card");
 		}
 		suit = card;
