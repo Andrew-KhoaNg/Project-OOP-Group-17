@@ -150,7 +150,7 @@ public class Game {
                 return;
             }
         }
-        throw new IllegalArgumentException("Can't draw card");
+        throw new IllegalArgumentException("Can't draw kort");
     }
     
     public void dealerDrawCard() { 
@@ -168,7 +168,7 @@ public class Game {
                 return;
             }
         }
-        throw new IllegalArgumentException("Dealer can't draw card");
+        throw new IllegalArgumentException("Dealer can't draw kort");
     }
     
     public boolean isVictory() {

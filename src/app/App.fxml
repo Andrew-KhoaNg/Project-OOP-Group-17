@@ -27,7 +27,7 @@
       </Label>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@kort/bakgrunn.png" />
+            <Image url="@kort/background.jpg" />
          </image>
       </ImageView>
       <Label layoutX="11.0" layoutY="147.0" text="Bank:" textFill="WHITE">
@@ -111,7 +111,7 @@
       <ImageView fx:id="dbilde5" fitHeight="115.5" fitWidth="84.7" layoutX="374.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" rotate="5.0" />
       <ImageView fitHeight="115.5" fitWidth="84.7" layoutX="486.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@kort/bakside.png" />
+            <Image url="@kort/backside.png" />
          </image>
       </ImageView>
       <Label fx:id="info" alignment="TOP_LEFT" layoutX="11.0" layoutY="69.0" prefHeight="52.0" prefWidth="191.0" text="Welcome to&#10;Blackjack!" textFill="WHITE" wrapText="true">
@@ -119,7 +119,7 @@
             <Font name="Candara Italic" size="16.0" />
          </font>
       </Label>
-      <Button fx:id="femhundre" layoutX="121.0" layoutY="247.0" mnemonicParsing="false" onAction="#clickFemhundre" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #846394;" text="\$500" textFill="WHITE">
+      <Button fx:id="femhundre" layoutX="121.0" layoutY="247.0" mnemonicParsing="false" onAction="#addBet500" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #846394;" text="\$500" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -127,7 +127,7 @@
             <Font name="Candara Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="hundre" layoutX="121.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickhundre" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #25449B;" text="\$100" textFill="WHITE">
+      <Button fx:id="hundre" layoutX="121.0" layoutY="180.0" mnemonicParsing="false" onAction="#addBet100" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #25449B;" text="\$100" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -135,7 +135,7 @@
             <Font name="Candara Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="tjuefem" layoutX="54.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickTjuefem" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #C3383D;" text="\$25" textFill="WHITE">
+      <Button fx:id="tjuefem" layoutX="54.0" layoutY="180.0" mnemonicParsing="false" onAction="#addBet25" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #C3383D;" text="\$25" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -143,7 +143,7 @@
             <Font name="Candara Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="ti" layoutX="54.0" layoutY="247.0" mnemonicParsing="false" onAction="#clickTi" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #22A271;" text="\$10" textFill="WHITE">
+      <Button fx:id="ti" layoutX="54.0" layoutY="247.0" mnemonicParsing="false" onAction="#addBet10" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 100; -fx-background-color: #22A271;" text="\$10" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -151,7 +151,7 @@
             <Font name="Candara Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="zero" layoutX="10.0" layoutY="252.0" mnemonicParsing="false" onAction="#clickNull" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 100; -fx-background-color: #2C3932;" text="\$0" textFill="WHITE">
+      <Button fx:id="zero" layoutX="10.0" layoutY="252.0" mnemonicParsing="false" onAction="#onClearBet" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 100; -fx-background-color: #2C3932;" text="\$0" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -164,7 +164,7 @@
             <Font name="Candara Bold" size="22.0" />
          </font>
       </Label>
-      <Button fx:id="en" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickEn" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 100; -fx-background-color: #FCFBFF;" text="\$1">
+      <Button fx:id="en" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#addBet1" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 100; -fx-background-color: #FCFBFF;" text="\$1">
          <effect>
             <DropShadow />
          </effect>
@@ -172,7 +172,7 @@
             <Font name="Candara Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="tilbake" layoutX="14.0" layoutY="22.0" minWidth="59.2" mnemonicParsing="false" onAction="#tilbake" prefHeight="40.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Back">
+      <Button fx:id="goBackToMenu" layoutX="14.0" layoutY="22.0" minWidth="59.2" mnemonicParsing="false" onAction="#goBackToMenu" prefHeight="40.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Back">
          <font>
             <Font name="Candara Italic" size="16.0" />
          </font>
@@ -196,7 +196,7 @@
          <children>
             <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kort/bilde.png" />
+                  <Image url="@kort/image.png" />
                </image>
             </ImageView>
             <Button fx:id="enterName" layoutX="344.0" layoutY="293.0" mnemonicParsing="false" onAction="#enterNameClick" prefHeight="28.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Enter" textFill="#191919" visible="false">
@@ -319,7 +319,7 @@
                   <Font name="Candara" size="16.0" />
                </font>
             </Label>
-            <Button fx:id="tilbake2" layoutX="20.0" layoutY="30.0" minWidth="59.2" mnemonicParsing="false" onAction="#tilbake2" prefHeight="40.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Back" visible="false">
+            <Button fx:id="goBackToMenu2" layoutX="20.0" layoutY="30.0" minWidth="59.2" mnemonicParsing="false" onAction="#goBackToMenu2" prefHeight="40.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Back" visible="false">
                <font>
                   <Font name="Candara Italic" size="16.0" />
                </font>
