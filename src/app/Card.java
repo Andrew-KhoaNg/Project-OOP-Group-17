@@ -14,7 +14,7 @@ public class Card {
 	}
 	
 	private boolean validCard(char card, int number) {
-		if (card == 'S' || card == 'H' || card == 'D' || card == 'C') {
+		if (!(card == 'S' || card == 'H' || card == 'D' || card == 'C')) {
 			return false;
 		}
 		if (!(number >= 1 & number <= 13)) {

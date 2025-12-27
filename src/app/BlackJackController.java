@@ -48,7 +48,8 @@ public class BlackJackController {
             nameInputField.setText("");bet.setText("");info.setText("");pot.setText("");outcome.setText("");
 			confirmBetButton.setVisible(false);hit.setVisible(false);stand.setVisible(false);start.setVisible(false);
 		} catch (Exception e) {
-			info.setText("Write a name");
+            e.printStackTrace(); // <--- THÊM DÒNG NÀY ĐỂ XEM LỖI GÌ Ở CONSOLE
+            info.setText("Error: " + e.getMessage()); // Hiển thị lỗi lên màn hình
 		}
 	}
 
