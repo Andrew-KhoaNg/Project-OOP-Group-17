@@ -168,13 +168,13 @@ public class BlackJackController {
 			bank.setText(Integer.toString(game.player.getMoney()));
 			pot.setText(bet.getText());
 			bet.setText("");
-			Image b1 = new Image("/app/kort/" + game.player.getCard1().toString() + ".png");
+			Image b1 = new Image("/app/card/" + game.player.getCard1().toString() + ".png");
 			playerCardImg1.setImage(b1);
-			Image b2 = new Image("/app/kort/" + game.player.getCard2().toString() + ".png");
+			Image b2 = new Image("/app/card/" + game.player.getCard2().toString() + ".png");
 			playerCardImg2.setImage(b2);
-			Image bd1 = new Image("/app/kort/" + game.dealer.getCard1().toString() + ".png");
+			Image bd1 = new Image("/app/card/" + game.dealer.getCard1().toString() + ".png");
 			dealerCardImg1.setImage(bd1);
-			Image bak = new Image("/app/kort/backside.png");
+			Image bak = new Image("/app/card/backside.png");
 			dealerCardImg2.setImage(bak);
 			playerCardImg3.setImage(null);
             playerCardImg4.setImage(null);
@@ -208,15 +208,15 @@ public class BlackJackController {
 			}
 			game.playerDrawCard();
 			if (playerCardImg3.getImage() == null) {
-				Image b3 = new Image("/app/kort/" + game.card3.toString() + ".png");
+				Image b3 = new Image("/app/card/" + game.card3.toString() + ".png");
 				playerCardImg3.setImage(b3);
 			}
 			if (playerCardImg4.getImage() == null && game.card4 != null) {
-				Image b4 = new Image("/app/kort/" + game.card4.toString() + ".png");
+				Image b4 = new Image("/app/card/" + game.card4.toString() + ".png");
 				playerCardImg4.setImage(b4);
 			}
 			if (playerCardImg5.getImage() == null && game.card5 != null) {
-				Image b5 = new Image("/app/kort/" + game.card5.toString() + ".png");
+				Image b5 = new Image("/app/card/" + game.card5.toString() + ".png");
 				playerCardImg5.setImage(b5);
 			}
 			playerScoreLabel.setText(Integer.toString(game.getPlayerSum()));
@@ -245,21 +245,21 @@ public class BlackJackController {
 			if (pot.getText().length() == 0) {
 				throw new IllegalArgumentException("Place bet first");
 			}
-			Image bd2 = new Image("/app/kort/" + game.dealer.getCard2().toString() + ".png");
+			Image bd2 = new Image("/app/card/" + game.dealer.getCard2().toString() + ".png");
 			dealerCardImg2.setImage(bd2);
 			dealerScoreLabel.setText(Integer.toString(game.getDealerSum()));
 			while (game.getDealerSum() < 17) {
 				game.dealerDrawCard();
 				if (dealerCardImg3.getImage() == null) {
-					Image bd3 = new Image("/app/kort/" + game.dCard3.toString() + ".png");
+					Image bd3 = new Image("/app/card/" + game.dCard3.toString() + ".png");
 					dealerCardImg3.setImage(bd3);
 				}
 				if (dealerCardImg4.getImage() == null && game.dCard4 != null) {
-					Image bd4 = new Image("/app/kort/" + game.dCard4.toString() + ".png");
+					Image bd4 = new Image("/app/card/" + game.dCard4.toString() + ".png");
 					dealerCardImg4.setImage(bd4);
 				}
 				if (dealerCardImg5.getImage() == null && game.dCard5 != null) {
-					Image bd5 = new Image("/app/kort/" + game.dCard5.toString() + ".png");
+					Image bd5 = new Image("/app/card/" + game.dCard5.toString() + ".png");
 					dealerCardImg5.setImage(bd5);
 				}
 				dealerScoreLabel.setText(Integer.toString(game.getDealerSum()));

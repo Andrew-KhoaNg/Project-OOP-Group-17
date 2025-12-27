@@ -27,7 +27,7 @@
       </Label>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@kort/background.jpg" />
+            <Image url="@card/background.jpg" />
          </image>
       </ImageView>
       <Label layoutX="11.0" layoutY="147.0" text="Bank:" textFill="WHITE">
@@ -111,7 +111,7 @@
       <ImageView fx:id="dbilde5" fitHeight="115.5" fitWidth="84.7" layoutX="374.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" rotate="5.0" />
       <ImageView fitHeight="115.5" fitWidth="84.7" layoutX="486.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@kort/backside.png" />
+            <Image url="@card/backside.png" />
          </image>
       </ImageView>
       <Label fx:id="info" alignment="TOP_LEFT" layoutX="11.0" layoutY="69.0" prefHeight="52.0" prefWidth="191.0" text="Welcome to&#10;Blackjack!" textFill="WHITE" wrapText="true">
@@ -196,7 +196,7 @@
          <children>
             <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@kort/image.png" />
+                  <Image url="@card/image.png" />
                </image>
             </ImageView>
             <Button fx:id="enterName" layoutX="344.0" layoutY="293.0" mnemonicParsing="false" onAction="#enterNameClick" prefHeight="28.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Enter" textFill="#191919" visible="false">

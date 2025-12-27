@@ -7,7 +7,7 @@ public class Card {
 	
 	public Card(char card, int number) {
 		if (!validCard(card, number)) {
-			throw new IllegalArgumentException("Invalid kort");
+			throw new IllegalArgumentException("Invalid card");
 		}
 		suit = card;
 		faceValue = number;
