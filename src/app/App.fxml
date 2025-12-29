@@ -319,7 +319,7 @@
                   <Font name="Candara" size="16.0" />
                </font>
             </Label>
-            <Button fx:id="goBackToMenu2" layoutX="20.0" layoutY="30.0" minWidth="59.2" mnemonicParsing="false" onAction="#goBackToMenu2" prefHeight="40.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Back" visible="false">
+            <Button fx:id="backFromLoadButton" layoutX="20.0" layoutY="30.0" minWidth="59.2" mnemonicParsing="false" onAction="#goBackToMenu2" prefHeight="40.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Back" visible="false">
                <font>
                   <Font name="Candara Italic" size="16.0" />
                </font>

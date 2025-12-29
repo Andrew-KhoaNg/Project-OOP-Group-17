@@ -6,7 +6,7 @@ public class BlackjackObjectloader {
 	private String identifier;
 	
 	public BlackjackObjectloader(String identifier, int money) {
-		this.money = this.money;
+		this.money = money;
 		this.identifier = identifier;
 	}
 
